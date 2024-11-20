@@ -1,0 +1,102 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e0f7fa; /* Light blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Chat Container */
+.chat-container {
+    width: 380px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.header {
+    background-color: #00796b; /* Teal header */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 10px;
+}
+
+/* Chat Box */
+.chat-box {
+    height: 300px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f8f8fa;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input Field */
+input[type="text"] {
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #00796b; /* Teal border */
+    margin-bottom: 10px;
+    width: 85%;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Button */
+button {
+    padding: 12px 20px;
+    background-color: #00796b; /* Teal button */
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    align-self: flex-start;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+    background-color: #004d40; /* Darker teal on hover */
+}
+
+/* Chat Messages */
+.bot-message, .user-message {
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    max-width: 75%;
+}
+
+.bot-message {
+    background-color: #ffffff; /* Lighter teal for bot */
+    align-self: flex-start;
+    color: black;
+}
+
+.user-message {
+    background-color: #80cbc4;
+    align-self: flex-end;
+    color: #00796b;
+}
+
+/* Focus on Input Field */
+input[type="text"]:focus {
+    border-color: #004d40; /* Darker teal on focus */
+    outline: none;
+}
